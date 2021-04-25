@@ -11,20 +11,19 @@ public class User {
     private String rationCardNumber;
 
     private String name;
-    private String aadharNumber;
+    private String aadhaarNumber;
     private String dob;
-    private String fingerPrintHash;
-
+    private String password;
     private List<Order> orders;
 
     public User() {}
 
-    public User(String rationCardNumber, String name, String aadharNumber, String dob, String fingerPrintHash) {
+    public User(String rationCardNumber, String name, String aadhaarNumber, String dob, String password) {
         this.rationCardNumber = rationCardNumber;
         this.name = name;
-        this.aadharNumber = aadharNumber;
+        this.aadhaarNumber = aadhaarNumber;
         this.dob = dob;
-        this.fingerPrintHash = fingerPrintHash;
+        this.password = password;
     }
 
     public String getRationCardNumber() {
@@ -43,12 +42,12 @@ public class User {
         this.name = name;
     }
 
-    public String getAadharNumber() {
-        return aadharNumber;
+    public String getAadhaarNumber() {
+        return aadhaarNumber;
     }
 
-    public void setAadharNumber(String aadharNumber) {
-        this.aadharNumber = aadharNumber;
+    public void setAadhaarNumber(String aadhaarNumber) {
+        this.aadhaarNumber = aadhaarNumber;
     }
 
     public String getDob() {
@@ -60,11 +59,11 @@ public class User {
     }
 
     public String getFingerPrintHash() {
-        return fingerPrintHash;
+        return password;
     }
 
-    public void setFingerPrintHash(String fingerPrintHash) {
-        this.fingerPrintHash = fingerPrintHash;
+    public void setFingerPrintHash(String password) {
+        this.password = password;
     }
 
     public List<Order> getOrders() {
@@ -80,9 +79,9 @@ public class User {
         return "User{" +
                 "rationCardNumber='" + rationCardNumber + '\'' +
                 ", name='" + name + '\'' +
-                ", aadharNumber='" + aadharNumber + '\'' +
+                ", aadhaarNumber='" + aadhaarNumber + '\'' +
                 ", dob='" + dob + '\'' +
-                ", fingerPrintHash='" + fingerPrintHash + '\'' +
+                ", fingerPrintHash='" + password + '\'' +
                 ", orders=" + orders +
                 '}';
     }
